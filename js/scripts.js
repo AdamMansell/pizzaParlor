@@ -28,19 +28,13 @@ Pizza.prototype.pizzaCost = function () {
 $(document).ready(function () {
   $("#form").submit(function (event) {
     event.preventDefault();
-
     const size = $("#size").val();
     const toppings = $("#toppings").val();
-
-
-
     let myPizza = new Pizza(size, toppings);
     console.log(size, toppings);
     let myCost = myPizza.pizzaCost();
     console.log(myCost);
     $("#cost").text(myCost);
     $("#cost-div").show();
-
-
   })
 });

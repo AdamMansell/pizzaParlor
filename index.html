@@ -26,12 +26,25 @@
         </div>
         <div class="card" class="form-group" class="radio">
           <div class="card-body">
-            <label><u><strong>Toppings:</strong></u></label>
-            <select id="toppings" class="form-control">
-              <option name="peporoni" value="pep">Peporoni</option>
-              <option name="sausage" value="saus">Sausage</option>
-              <option name="anchovies" value="anch">Anchovies</option>
-            </select>
+            <label for="pizza-toppings"><u><strong>Toppings:</strong></u></label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="peporoni" value="pep">
+                Peporoni
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="sausage" value="saus">
+                Sausage
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="anchovies" value="anch">
+                Anchovies
+              </label>
+            </div>
           </div>
         </div>
         <button type="submit" class="btn-danger">Make My Pizza!</button>
