@@ -1,6 +1,30 @@
+#title {
+  color: blanchedalmond;
+  font-family: cursive;
+  font-size: 200px;
+  text-shadow: black 7px 4px 3px;
+  background: rgba(0, 0, 0, 0.418);
+  border: rgba(0, 0, 0, 0.281) 15px ;
+  margin-bottom: 0px;
+}
 #cost-div {
   display:none;
 }
 body {
   background-image: url("../img/pizza.jpg");
+}
+
+#size-div, #toppings-div {
+  background-color: #E27901;
+}
+
+#size {
+  width: 170px;
+}
+
+#pizza-button {
+  align-content: center;
+  margin: 15px;
+  height: 30px;
+  width: 200px;
 }
