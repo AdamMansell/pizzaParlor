@@ -17,47 +17,21 @@
         <div class="card" class="form-group" class="radio">
           <div class="card-body">
             <label for="pizza-size"><u><strong>Pizza Size:</strong></u></label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="small" value="smallVal">
-                Small
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="medium" value="medVal">
-                Medium
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="large" value="lrgVal">
-                Large
-              </label>
-            </div>
+            <select id="size" class="form-control">
+              <option name="small" value="smallVal">Small</option>
+              <option name="medium" value="medVal">Medium</option>
+              <option name="large" value="lrgVal">Large</option>
+            </select>
           </div>
         </div>
         <div class="card" class="form-group" class="radio">
           <div class="card-body">
             <label for="pizza-toppings"><u><strong>Toppings:</strong></u></label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="peporoni" value="pep">
-                  Peporoni
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="sausage" value="saus">
-                Sausage
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="anchovies" value="anch">
-                Anchovies
-              </label>
-            </div>
+            <select id="size" class="form-control">
+              <option name="peporoni" value="pep">Peporoni</option>
+              <option name="sausage" value="saus">Sausage</option>
+              <option name="anchovies" value="anch">Anchovies</option>
+            </select>
           </div>
         </div>
         <button type="submit" class="btn-danger">Make My Pizza!</button>
