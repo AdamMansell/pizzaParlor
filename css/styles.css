@@ -16,6 +16,7 @@ body {
 
 #size-div, #toppings-div {
   background-color: #E27901;
+  border: solid black 2px;
 }
 
 #size {
@@ -27,4 +28,5 @@ body {
   margin: 15px;
   height: 30px;
   width: 200px;
+  box-shadow: black 1px 1px 1px;;
 }
