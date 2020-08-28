@@ -36,7 +36,7 @@ Spec: Selecting a large pizza with no toppings should return twenty dollars.
 ________________________________
 
 Spec: Selecting a small pizza with pepperoni toppings should return fourteen dollars.
-- Input: "size = "lrgVal", ["pep"]"
+- Input: "size = "smallVal", ["pep"]"
 - Output: 14<br>
 ________________________________
 
