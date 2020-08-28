@@ -16,7 +16,7 @@
       <form id="form">
         <div class="card" class="form-group" class="radio">
           <div class="card-body">
-            <label for="pizza-size"><u><strong>Pizza Size:</strong></u></label>
+            <label><u><strong>Pizza Size:</strong></u></label>
             <select id="size" class="form-control">
               <option name="small" value="smallVal">Small</option>
               <option name="medium" value="medVal">Medium</option>
@@ -26,8 +26,8 @@
         </div>
         <div class="card" class="form-group" class="radio">
           <div class="card-body">
-            <label for="pizza-toppings"><u><strong>Toppings:</strong></u></label>
-            <select id="size" class="form-control">
+            <label><u><strong>Toppings:</strong></u></label>
+            <select id="toppings" class="form-control">
               <option name="peporoni" value="pep">Peporoni</option>
               <option name="sausage" value="saus">Sausage</option>
               <option name="anchovies" value="anch">Anchovies</option>
@@ -36,7 +36,9 @@
         </div>
         <button type="submit" class="btn-danger">Make My Pizza!</button>
       </form>
-      <h3 id="cost">Cost:</h3>
+      <div id="cost-div">
+        <h3>Cost: <span id="cost"></span></h3>
+      </div>
     </div>
 
   </body>
