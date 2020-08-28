@@ -16,9 +16,9 @@ Pizza.prototype.pizzaCost = function () {
   size = smallVal ? cost += small : cost;
   size = medVal ? cost += medium : cost;
   size = legVal ? cost += large : cost;
-  toppings = peporoni ? cost += pep : cost;
-  toppings = sausage ? cost += saus : cost;
-  toppings = anchovies ? cost += anch : cost;
+  toppings = pep ? cost += peporoni : cost;
+  toppings = saus ? cost += sausage : cost;
+  toppings = anch ? cost += anchovies : cost;
 }
 
 
