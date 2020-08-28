@@ -35,14 +35,14 @@ Spec: Selecting a large pizza with no toppings should return twenty dollars.
 - Output: 20<br>
 ________________________________
 
-Spec:
-- Input:
-- Output: <br>
+Spec: Selecting a small pizza with pepperoni toppings should return fourteen dollars.
+- Input: "size = "lrgVal", ["pep"]"
+- Output: 14<br>
 ________________________________
 
-Spec: 
-- Input: 
-- Output: <br>
+Spec: Selecting a medium pizza with pepperoni toppings should return seventeen dollars.
+- Input: "size = "medVal", ["pep"]"
+- Output: 17<br>
 ________________________________
 
 ## Technologies Used

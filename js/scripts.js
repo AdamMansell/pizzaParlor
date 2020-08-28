@@ -10,18 +10,18 @@ Pizza.prototype.pizzaCost = function () {
   let small = 12;
   let medium = 15;
   let large = 20;
-  let peporoni = 2;
+  let pepperoni = 2;
   let sausage = 3;
   let anchovies = 5;
 
   for (i = 0; i < toppingsInput.length; i++) {
     toppings.push(toppingsInput[i]);
   }
-  
+
   size == "smallVal" ? cost += small : cost;
   size == "medVal" ? cost += medium : cost;
   size == "lrgVal" ? cost += large : cost;
-  toppings.includes("pep") == true ? cost += peporoni : cost;
+  toppings.includes("pep") == true ? cost += pepperoni : cost;
   toppings.includes("saus") == true ? cost += sausage : cost;
   toppings.includes("anch") == true ? cost += anchovies : cost;
   return cost;
