@@ -1,12 +1,14 @@
-function Pizza(size, toppingsInput) {
+function Pizza(size, toppingsInput, totalCost) {
   this.size = size,
-    this.toppingsInput = toppingsInput
+    this.toppingsInput = toppingsInput,
+    this.totalCost = totalCost
+
 }
 Pizza.prototype.pizzaCost = function () {
   let toppings = [];
-  let toppingsInput = (this.toppingsInput);
-  let cost = 0;
   let size = (this.size);
+  let toppingsInput = (this.toppingsInput);
+  let totalCost = (this.totalCost);
   let small = 12;
   let medium = 15;
   let large = 20;
@@ -18,24 +20,27 @@ Pizza.prototype.pizzaCost = function () {
     toppings.push(toppingsInput[i]);
   }
 
-  size == "smallVal" ? cost += small : cost;
-  size == "medVal" ? cost += medium : cost;
-  size == "lrgVal" ? cost += large : cost;
-  toppings.includes("pep") == true ? cost += pepperoni : cost;
-  toppings.includes("saus") == true ? cost += sausage : cost;
-  toppings.includes("anch") == true ? cost += anchovies : cost;
-  return cost;
+  size == "smallVal" ? totalCost += small : totalCost;
+  size == "medVal" ? totalCost += medium : totalCost;
+  size == "lrgVal" ? totalCost += large : totalCost;
+  toppings.includes("pep") == true ? totalCost += pepperoni : totalCost;
+  toppings.includes("saus") == true ? totalCost += sausage : totalCost;
+  toppings.includes("anch") == true ? totalCost += anchovies : totalCost;
+  let myPizza = {size, toppingsInput, totalCost};
+  return myPizza;
+
 }
 $(document).ready(function () {
   $("#form").submit(function (event) {
     event.preventDefault();
     let size = $("#size").val();
+    let totalCost = 0;
     let toppingsInput = $("input:checkbox[name=tops]:checked").map(function () {
       return $(this).val();
     })
-    let myPizza = new Pizza(size, toppingsInput);
-    let myCost = myPizza.pizzaCost();
-    $("#cost").text(myCost);
+    let myPizza = new Pizza(size, toppingsInput, totalCost);
+    let finalPizza = myPizza.pizzaCost();
+    $("#cost").text(finalPizza.totalCost);
     $("#cost-div").show();
   })
 });
