@@ -4,7 +4,6 @@ function Pizza(size, toppingsInput, totalCost) {
     this.toppingsInput = toppingsInput,
     this.totalCost = totalCost
 }
-
 // ----------- pizzaCost Method -----------
 Pizza.prototype.pizzaCost = function () {
   let small = 12;
